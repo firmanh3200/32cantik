@@ -116,6 +116,7 @@ body {
     opacity: 1;
     visibility: visible;
     padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .dropdown.active .dropdown-menu {
@@ -146,10 +147,10 @@ body {
   top: 100%;
   left: 0;
   background-color: var(--white);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   min-width: 200px;
   border-radius: 4px;
-  padding: 0.5rem 0;
+  padding: 0.15rem 0;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
@@ -174,7 +175,7 @@ body {
   color: var(--text-color);
   text-decoration: none;
   display: block;
-  padding: 0.25rem 0.5rem;
+  padding: 0.15rem 0.15rem;
   width: 100%;
   transition: all 0.2s ease;
 }
@@ -187,9 +188,9 @@ body {
 
 /* Parallax Hero Section */
 .hero {
-  height: 100vh;
+  height: 75vh;
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                    url('https://source.unsplash.com/random/1920x1080/?nature,green');
+                    url('../gambar/cantik.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
