@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelurahan Derwati Demographics</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+        }
+        .card-body {
+            padding: 15px;
+             flex: 1;
+           display: flex;
+            flex-direction: column;
+        }
+        .card-header {
+            background-color: #ff914d;
+			color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .card-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+			height: 300px;
+            align-items: center;
+            justify-content: center;
+          }
+        .sticky-header {
+			background-color: white; /* Warna latar belakang */
+			width: 100%; /* Lebar penuh */
+			position: sticky; /* Menggunakan sticky */
+			top: 0; /* Menempel di bagian atas */
+			z-index: 1000; /* Agar tetap di atas elemen lain */
+		}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sticky-header">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="card text-center" style="background-color: #ff914d; color: white;">
+						<div class="card-body">
+							<h2 class="card-title"><strong>INDIKATOR DEMOGRAFI</strong></h2>
+							<h1 class="card-title">KELURAHAN DERWATI</h1>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card text-center" style="background-color: #e9ecef; color: black;">
+						<div class="card-body">
+							<h2><strong>JUNI</strong></h2>
+							<h1 class="card-title"><strong>2022</strong></h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!-- METRIK BARIS 1 -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center" style="background-color: #0f7dc4; color: white;">
+                    <div class="card-body">
+                        <div class="card-number">19 687</div>
+                        <p class="card-text">Total Penduduk</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center" style="background-color: #6abf47; color: white;">
+                     <div class="card-body">
+                        <div class="card-number">9 936</div>
+                        <p class="card-text">Laki-laki</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                 <div class="card text-center" style="background-color: #f2bb0d; color: white;">
+                    <div class="card-body">
+                        <div class="card-number">9 751</div>
+                        <p class="card-text">Perempuan</p>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="card text-center" style="background-color: #78229c; color: white;">
+                    <div class="card-body">
+                        <div class="card-number">5 724</div>
+                        <p class="card-text">KK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- METRIK BARIS 2 -->
+       <div class="row">
+            <div class="col-sm-2">
+                <div class="card text-center" style="background-color: #ffffff; color: black;">
+                    <div class="card-body">
+                        <div class="card-number">35</div>
+                        <p class="card-text">R W</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card text-center" style="background-color: #ffffff; color: black;">
+                    <div class="card-body">
+                        <div class="card-number">35</div>
+                        <p class="card-text">R T</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card text-center" style="background-color: #ffffff; color: black;">
+                    <div class="card-body">
+                        <div class="card-number">35</div>
+                        <p class="card-text">Lahir</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card text-center" style="background-color: #ffffff; color: black;">
+                    <div class="card-body">
+                        <div class="card-number">18</div>
+                        <p class="card-text">Mati</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card text-center" style="background-color: #ffffff; color: black;">
+                   <div class="card-body">
+                        <div class="card-number">15</div>
+                        <p class="card-text">Keluar</p>
+                    </div>
+                </div>
+           </div>
+           <div class="col-sm-2">
+                <div class="card text-center" style="background-color: #ffffff; color: black;">
+                    <div class="card-body">
+                        <div class="card-number">37</div>
+                        <p class="card-text">Masuk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<!-- PIRAMIDA PENDUDUK DAN PENDIDIKAN -->
+       <div class="row d-flex align-items-stretch">
+           <div class="col-md-6">
+              <div class="card">
+                   <div class="card-header">Piramida Penduduk</div>
+                   <div class="card-body">
+                       <div class="chart-container">
+                           <canvas id="ageChart" style="height: 100%; width: 100%;"></canvas>
+                         </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-6">
+                 <div class="card">
+                     <div class="card-header">Tingkat Pendidikan</div>
+                     <div class="card-body">
+                       <div class="chart-container">
+                           <canvas id="educationChart" style="height: 100%; width: 100%;"></canvas>
+                         </div>
+                     </div>
+                </div>
+             </div>
+        </div>
+
+       <div class="row d-flex align-items-stretch">
+             <div class="col-md-6">
+                 <div class="card">
+                      <div class="card-header">Agama</div>
+                       <div class="card-body">
+                         <div class="chart-container">
+                            <canvas id="religionChart" style="height: 100%; width: 100%;"></canvas>
+                         </div>
+                       </div>
+                  </div>
+             </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Pekerjaan</div>
+                    <div class="card-body">
+                        <div class="chart-container">
+                           <canvas id="jobChart" style="height: 100%; width: 100%;"></canvas>
+                         </div>
+                    </div>
+               </div>
+           </div>
+      </div>
+    </div>
+    <script>
+        const ageChartCanvas = document.getElementById('ageChart');
+		const ageChart = new Chart(ageChartCanvas, {
+			type: 'bar',
+			data: {
+				labels: ['65+', '60-64', '55-59', '50-54', '45-49', '40-44', '35-39', '30-34', '25-29', '20-24', '15-19', '10-14', '5-9', '0-4'],
+				datasets: [{
+					label: 'Laki-laki',
+					data: [10, 134, 285, 385, 526, 724, 775, 842, 722, 615, 736, 757, 828, 791],
+					backgroundColor: '#0f7dc4',
+					stack: 'Stack 0',
+				}, {
+					label: 'Perempuan',
+					data: [-43, -127, -287, -420, -550, -726, -774, -738, -734, -702, -750, -741, -788, -750],
+					backgroundColor: '#f2bb0d',
+					stack: 'Stack 0',
+				}]
+			},
+			options: {
+				indexAxis: 'y',
+				scales: {
+					x: {
+						title: {
+							display: true,
+							text: 'Jumlah Penduduk'
+						},
+						position: 'bottom',
+						ticks:{
+							callback: function(value) {
+								return Math.abs(value);
+							}
+						},
+						grid: {
+							display: false // Menghilangkan garis grid
+						}
+					},
+					y: {
+						title: {
+							display: true,
+							text: 'Rentang Usia'
+						},
+						position: 'left',
+						grid: {
+							display: false // Menghilangkan garis grid
+						}
+					}
+				},
+				plugins: {
+					title: {
+						display: false
+					},
+					legend: {
+						display: true,
+						position: 'bottom' // Memindahkan legenda ke bawah
+					}
+				},
+				responsive: true,
+				maintainAspectRatio: false,
+			}
+		});
+
+    const educationChartCanvas = document.getElementById('educationChart');
+    const educationChart = new Chart(educationChartCanvas, {
+        type: 'doughnut',
+        data: {
+            labels: ['Tidak/Belum Sekolah', 'Tidak Tamat SD', 'Belum Tamat SD', 'Tamat SD', 'SLTP', 'SLTA', 'Akademi/Sederajat', 'Universitas'],
+            datasets: [{
+                 data: [2976, 2236, 1721, 2266, 2692, 3549, 1423, 824],
+                backgroundColor: ['#003f5c','#2f4b7c','#665191','#a05195','#d45087','#f95d6a','#ff7c43','#ffa600']
+             }]
+        },
+           options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                 legend: {
+                  display: true,
+                  position: 'right'
+                 },
+                 title: {
+                  display: false
+                 }
+               }
+        }
+    });
+
+     const religionChartCanvas = document.getElementById('religionChart');
+    const religionChart = new Chart(religionChartCanvas, {
+         type: 'doughnut',
+        data: {
+            labels: ['Islam', 'Kristen', 'Katholik', 'Hindu', 'Buddha'],
+            datasets: [{
+                data: [17430, 1640, 418, 198, 0],
+                 backgroundColor: ['#6abf47','#0f7dc4','#f2bb0d','#78229c', '#ff0000']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                 legend: {
+                  display: true,
+                  position: 'right'
+                 },
+                 title: {
+                  display: false
+                 }
+               }
+        }
+    });
+
+   const jobChartCanvas = document.getElementById('jobChart');
+    const jobChart = new Chart(jobChartCanvas, {
+        type: 'bar',
+        data: {
+            labels: ['Pelajar', 'Lain-lain', 'Pegawai Swasta', 'Dagang', 'Mahasiswa', 'Pegawai Negeri', 'Pensiunan', 'Tani', 'TNI/POLRI'],
+            datasets: [{
+                label: 'Jumlah',
+                data: [4678, 3303, 3276, 3025, 1599, 1001, 750, 400, 180],
+                backgroundColor: '#0f7dc4',
+            }]
+        },
+         options: {
+            indexAxis: 'y',
+             scales: {
+                x: {
+                    title: {
+                        display: true,
+                         text: 'Jumlah Penduduk'
+                    },
+                    position: 'bottom',
+                   
+                },
+                y: {
+                     title: {
+                       display: true,
+                       text: 'Pekerjaan'
+                   },
+                    position: 'left'
+                }
+            },
+            plugins: {
+                title: {
+                    display: false
+                },
+				legend: {
+						display: false,
+				}		
+            },
+           responsive: true,
+            maintainAspectRatio: false
+        }
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
