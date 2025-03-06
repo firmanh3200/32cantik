@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Web Cantik</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="sticky-header">
+        <div class="logo">
+            <svg width="50" height="50" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="#2e7d32" />
+                <text x="50" y="60" text-anchor="middle" fill="white" font-size="20">@fhy3273</text>
+            </svg>
+        </div>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" target="_blank">Beranda</a></li>
+                <li><a href="index.html#pelayanan">Pelayanan</a></li>
+                <li><a href="index.html#galeri">Galeri</a></li>
+
+                <li class="dropdown">
+                    <a href="#">PPID</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Visi Misi</a></li>
+                        <li><a href="#">Struktur Organisasi</a></li>
+                        <li><a href="#">Program dan Kegiatan</a></li>
+                        <li><a href="#">Profil Kelurahan</a></li>
+                        <li><a href="#">Pengumuman</a></li>
+                        <li><a href="#">Agenda Kegiatan</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Statistik</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">e-Prodeskel</a></li>
+                        <li><a href="#kependudukan">Lapduk Bulanan</a></li>
+                        <li><a href="#pendidikan">Pendidikan</a></li>
+                        <li><a href="#kesehatan">Kesehatan</a></li>
+                        <li><a href="#ekonomi">Perekonomian</a></li>
+                        <li><a href="#lainnya">Lainnya</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br>
+    <main>
+        <section class="text-center">
+            <div class="hero-content">
+                <h3>Profil Desa Panenjoan</h3>
+                <p>e-prodeskel.kemendagri.go.id</p>
+            </div>
+            <div class="container text-center">
+				<div class="card">
+					<div style="display: flex; justify-content: center;">
+						<iframe style="display: block; margin: 0 auto;" src="https://e-prodeskel.kemendagri.go.id/datapokok/data.php?kodesa=3204100007" width="55%" height="600" border="0"></iframe>
+					</div>
+				</div>
+            </div>
+        </section>
+
+        <br><br>
+        <section class="text-center">
+            <div class="hero-content">
+                <h3>Data dan Informasi Lainnya</h3>
+                <p>e-prodeskel.kemendagri.go.id</p>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <label for="tahunData" class="form-label">Tahun Data:</label>
+                        <select class="form-select" id="tahunData">
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="kategoriData" class="form-label">Kategori Data:</label>
+                        <select class="form-select" id="kategoriData">
+                            <option value="2">Pendidikan</option>
+                            <option value="6">Kesejahteraan Keluarga</option>
+                            <option value="7">Perkembangan LKM</option>
+                            <option value="8">Musrenbangdes</option>
+                            <option value="9">Posyandu</option>
+                            <option value="10">PKK</option>
+                            <option value="11">Iklim</option>
+                            <option value="12">Lahan</option>
+                            <option value="13">Potensi Penduduk</option>
+                            <option value="14">Lahan Kehutanan</option>
+                            <option value="15">Lahan Perkebunan</option>
+                            <option value="16">Lahan Pertanian</option>
+                            <option value="17">Potensi LKM</option>
+                            <option value="18">Potensi Pemerintahan</option>
+                            <option value="19">Luas Wilayah</option>
+                            <option value="20">Keagamaan</option>
+                            <option value="21">Sarana Prasarana</option>
+                            <option value="22">Air Bersih</option>
+                            <option value="23">Kesehatan</option>
+                            <option value="24">Kominfo</option>
+                            <option value="25">Umur Tunggal</option>
+                            <option value="34">RT - RW</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <button id="downloadButton" class="btn btn-primary">Tampilkan Data</button>
+				<br><br>
+				<div class="card">
+					<iframe id="dataIframe" width="100%" height="600px" border="0"></iframe>
+				</div>
+			</div>
+        </section>
+
+    </main>
+	<br><br><br>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="social-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+                <p>&copy; 2024 Desa Panenjoan, Kecamatan Cicalengka, Kabupaten Bandung, Provinsi Jawa Barat. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() { // Pastikan DOM sudah siap
+            document.getElementById('downloadButton').addEventListener('click', function() {
+                const tahun = document.getElementById('tahunData').value;
+                const kategori = document.getElementById('kategoriData').value;
+                const url = `https://e-prodeskel.kemendagri.go.id/api/d/${tahun}/data-integrasi-level/${kategori}?kode_daerah=320425`;
+
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // Konversi JSON ke worksheet
+                        // Pastikan data adalah array dari objek
+						                        if (!Array.isArray(data)) {
+                            console.error('Data bukan array:', data);
+                            alert('Data yang diterima bukan dalam format yang diharapkan.');
+                            return;
+                        }
+
+                        if (data.length === 0) {
+                            alert('Tidak ada data untuk kategori dan tahun yang dipilih.');
+                            return;
+                        }
+
+                        const ws = XLSX.utils.json_to_sheet(data);
+
+                        // Buat workbook
+                        const wb = XLSX.utils.book_new();
+                        XLSX.utils.book_append_sheet(wb, ws, "Data");
+
+                        // Export ke file Excel
+                        XLSX.writeFile(wb, `data_${tahun}_${kategori}.xlsx`);
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Tidak bisa diunduh langsung, silakan Copy Paste secara manual.');
+                    });
+
+                // Update iframe
+                document.getElementById('dataIframe').src = url;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
