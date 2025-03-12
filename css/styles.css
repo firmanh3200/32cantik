@@ -347,3 +347,7 @@ footer {
         padding: 40px 55px;
     }
 }
+
+.hidden-iframe {
+    display: none; /* Sembunyikan iframe secara default */
+}

@@ -64,8 +64,8 @@
 				<div class="col-md-9">
 					<div class="card text-center" style="background-color: #ff914d; color: white;">
 						<div class="card-body">
-							<h2 class="card-title"><strong>INDIKATOR DEMOGRAFI</strong></h2>
-							<h1 class="card-title">KELURAHAN DERWATI</h1>
+							<h1 class="card-title"><strong>LAPORAN KEPENDUDUKAN</strong></h1>
+							<h1 class="card-title">DESA PANENJOAN</h1>
 						</div>
 					</div>
 				</div>
@@ -73,7 +73,7 @@
 					<div class="card text-center" style="background-color: #e9ecef; color: black;">
 						<div class="card-body">
 							<h2><strong>JUNI</strong></h2>
-							<h1 class="card-title"><strong>2022</strong></h1>
+							<h1 class="card-title"><strong>2024</strong></h1>
 						</div>
 					</div>
 				</div>
@@ -85,7 +85,7 @@
             <div class="col-md-3">
                 <div class="card text-center" style="background-color: #0f7dc4; color: white;">
                     <div class="card-body">
-                        <div class="card-number">19 687</div>
+                        <div class="card-number">14 883</div>
                         <p class="card-text">Total Penduduk</p>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
             <div class="col-md-3">
                 <div class="card text-center" style="background-color: #6abf47; color: white;">
                      <div class="card-body">
-                        <div class="card-number">9 936</div>
+                        <div class="card-number">7 455</div>
                         <p class="card-text">Laki-laki</p>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
             <div class="col-md-3">
                  <div class="card text-center" style="background-color: #f2bb0d; color: white;">
                     <div class="card-body">
-                        <div class="card-number">9 751</div>
+                        <div class="card-number">7 428</div>
                         <p class="card-text">Perempuan</p>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
              <div class="col-md-3">
                 <div class="card text-center" style="background-color: #78229c; color: white;">
                     <div class="card-body">
-                        <div class="card-number">5 724</div>
+                        <div class="card-number">4 739</div>
                         <p class="card-text">KK</p>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
             <div class="col-sm-2">
                 <div class="card text-center" style="background-color: #ffffff; color: black;">
                     <div class="card-body">
-                        <div class="card-number">35</div>
+                        <div class="card-number">11</div>
                         <p class="card-text">R W</p>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
             <div class="col-sm-2">
                 <div class="card text-center" style="background-color: #ffffff; color: black;">
                     <div class="card-body">
-                        <div class="card-number">35</div>
+                        <div class="card-number">60</div>
                         <p class="card-text">R T</p>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
             <div class="col-sm-2">
                 <div class="card text-center" style="background-color: #ffffff; color: black;">
                     <div class="card-body">
-                        <div class="card-number">18</div>
+                        <div class="card-number">35</div>
                         <p class="card-text">Mati</p>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
            <div class="col-sm-2">
                 <div class="card text-center" style="background-color: #ffffff; color: black;">
                     <div class="card-body">
-                        <div class="card-number">37</div>
+                        <div class="card-number">15</div>
                         <p class="card-text">Masuk</p>
                     </div>
                 </div>
@@ -219,15 +219,15 @@
 		const ageChart = new Chart(ageChartCanvas, {
 			type: 'bar',
 			data: {
-				labels: ['65+', '60-64', '55-59', '50-54', '45-49', '40-44', '35-39', '30-34', '25-29', '20-24', '15-19', '10-14', '5-9', '0-4'],
+				labels: ['75+', '70-74', '65-69', '60-64', '55-59', '50-54', '45-49', '40-44', '35-39', '30-34', '25-29', '20-24', '15-19', '10-14', '5-9', '0-4'],
 				datasets: [{
 					label: 'Laki-laki',
-					data: [10, 134, 285, 385, 526, 724, 775, 842, 722, 615, 736, 757, 828, 791],
+					data: [43, 48, 102, 128, 193, 273, 319, 349, 396, 296, 317, 369, 458, 478, 385, 259],
 					backgroundColor: '#0f7dc4',
 					stack: 'Stack 0',
 				}, {
 					label: 'Perempuan',
-					data: [-43, -127, -287, -420, -550, -726, -774, -738, -734, -702, -750, -741, -788, -750],
+					data: [-37, -48, -97, -130, -198, -228, -335, -397, -389, -278, -330, -371, -439, -448, -421, -241],
 					backgroundColor: '#f2bb0d',
 					stack: 'Stack 0',
 				}]
@@ -279,9 +279,9 @@
     const educationChart = new Chart(educationChartCanvas, {
         type: 'doughnut',
         data: {
-            labels: ['Tidak/Belum Sekolah', 'Tidak Tamat SD', 'Belum Tamat SD', 'Tamat SD', 'SLTP', 'SLTA', 'Akademi/Sederajat', 'Universitas'],
+            labels: ['Tidak/Belum Sekolah', 'Belum Tamat SD', 'Tamat SD', 'SLTP', 'SLTA', 'Akademi', 'Sarjana', 'Magister'],
             datasets: [{
-                 data: [2976, 2236, 1721, 2266, 2692, 3549, 1423, 824],
+                 data: [3626, 1935, 3339, 4218, 5390, 410, 583, 34],
                 backgroundColor: ['#003f5c','#2f4b7c','#665191','#a05195','#d45087','#f95d6a','#ff7c43','#ffa600']
              }]
         },
@@ -304,10 +304,10 @@
     const religionChart = new Chart(religionChartCanvas, {
          type: 'doughnut',
         data: {
-            labels: ['Islam', 'Kristen', 'Katholik', 'Hindu', 'Buddha'],
+            labels: ['Islam', 'Kristen', 'Katholik', 'Hindu', 'Buddha', 'Konghuchu', 'Kepercayaan Tuhan YME'],
             datasets: [{
-                data: [17430, 1640, 418, 198, 0],
-                 backgroundColor: ['#6abf47','#0f7dc4','#f2bb0d','#78229c', '#ff0000']
+                data: [19429, 80, 13, 0, 10, 0, 3],
+                 backgroundColor: ['#6abf47','#0f7dc4','#f2bb0d','#78229c', '#ff0000', '#ff33', '#dd']
             }]
         },
         options: {
@@ -329,10 +329,10 @@
     const jobChart = new Chart(jobChartCanvas, {
         type: 'bar',
         data: {
-            labels: ['Pelajar', 'Lain-lain', 'Pegawai Swasta', 'Dagang', 'Mahasiswa', 'Pegawai Negeri', 'Pensiunan', 'Tani', 'TNI/POLRI'],
+            labels: ['PNS', 'Pensiunan', 'Belum/Tidak Bekerja', 'Pelajar/Mahasiswa', 'Mengurus Rumah Tangga', 'Perdagangan', 'Polri', 'TNI', 'Petani/Pekebun', 'Karyawan Swasta', 'Buruh Harian Lepas', 'Guru', 'Wiraswasta'],
             datasets: [{
-                label: 'Jumlah',
-                data: [4678, 3303, 3276, 3025, 1599, 1001, 750, 400, 180],
+                label: 'Jiwa',
+                data: [5373, 4206, 3627, 3349, 1939, 580, 279, 130, 34, 8, 5, 2, 3],
                 backgroundColor: '#0f7dc4',
             }]
         },
