@@ -1,2 +1,2 @@
 # 32cantik
-Dashboard Data Desa/ Kelurahan Cinta Statistik
+Dashboard Data Desa Cinta Statistik
