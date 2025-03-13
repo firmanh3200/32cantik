@@ -70,11 +70,11 @@
         <li class="dropdown">
           <a href="#">Contoh</a>
           <ul class="dropdown-menu">
-            <li><a href="prodeskel.html" target="_blank">e-Prodeskel</a></li>
+            <li><a href="https://asyasyarif.github.io/web-gis-ratu/" target="_blank">Peta RW</a></li>
+        <!--    <li><a href="prodeskel.html" target="_blank">e-Prodeskel</a></li>
             <li><a href="dashboard-lapduk.html" target="_blank">Lapduk Bulanan</a></li>
             <li><a href="https://gisdukcapil32.streamlit.app/Kelurahan_Desa" target="_blank">Dukcapil Semesteran</a></li>
-            <li><a href="https://asyasyarif.github.io/web-gis-ratu/" target="_blank">Peta RW</a></li>
-        <!--    <li><a href="#">Perekonomian</a></li>
+            <li><a href="#">Perekonomian</a></li>
             <li><a href="#">Lainnya</a></li> -->
           </ul>
         </li>
@@ -119,7 +119,7 @@
         </div>
     </section>
     <section>
-        <iframe id="frame-content" name="frame-content" class="hidden-iframe" style="width: 100%; height: 700px;">
+        <iframe id="frame-content" name="frame-content" class="hidden-iframe" style="width: 100%; height: 100%;">
 
         </iframe>
     </section>
@@ -206,6 +206,10 @@
     });
 
     document.getElementById('tombol-lapduk').addEventListener('click', function() {
+        document.getElementById('frame-content').classList.remove('hidden-iframe');
+    });
+
+    document.getElementById('tombol-dpmd').addEventListener('click', function() {
         document.getElementById('frame-content').classList.remove('hidden-iframe');
     });
 

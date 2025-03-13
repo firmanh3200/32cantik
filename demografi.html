@@ -34,6 +34,46 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        .dashboard-container-a {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #050785;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .dashboard-container-b {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #024d15;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .dashboard-container-c {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #816b05;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .dashboard-container-d {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #770505;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(201, 3, 3, 0.1);
+            color: white;
+        }
+
         .section-title {
             margin-bottom: 20px;
             color: #333;
@@ -57,6 +97,35 @@
     <div class="sticky-header">
         <h1>Demografi Desa Panenjoan</h1>
         <h3>Semester 1 Tahun 2024</h3>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="dashboard-container-a">
+                        <h5>Penduduk</h5>
+                        <h2>14.883</h2>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="dashboard-container-b">
+                        <h5>Laki-laki</h5>
+                        <h2>7.455</h2>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="dashboard-container-c">
+                        <h5>Perempuan</h5>
+                        <h2>7.428</h2>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="dashboard-container-d">
+                        <h5>Keluarga</h5>
+                        <h2>4.739</h2>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="dashboard-container">
@@ -87,168 +156,151 @@
                 <button class="nav-link" id="status-kawin-tab" data-bs-toggle="tab" data-bs-target="#status-kawin" type="button" role="tab" aria-controls="status-kawin" aria-selected="false">Status Kawin</button>
             </li>
         </ul>
-
+        <br>
         <div class="tab-content" id="myTabContent">
 
             <div class="tab-pane fade show active" id="agama" role="tabpanel" aria-labelledby="agama-tab">
                 <section>
-                    <h2 class="section-title">Data Agama</h2>
-                    <div class="table-responsive">
-                        <table id="agamaTable" class="table table-striped table-bordered" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Agama</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Islam</td>
-                                    <td>14804</td>
-                                </tr>
-                                <tr>
-                                    <td>Kristen</td>
-                                    <td>62</td>
-                                </tr>
-                                <tr>
-                                    <td>Katholik</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>Hindu</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>Buddha</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Konghuchu</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>Kepercayaan Tuhan YME</td>
-                                    <td>0</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Agama</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </tfoot>
-                        </table>
+                    <h2 class="section-title text-center">Agama Penduduk</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="table-responsive">
+                                <table id="agamaTable" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Agama</th>
+                                            <th>Jumlah Penduduk</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Islam</td>
+                                            <td>14804</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kristen</td>
+                                            <td>62</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Katholik</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hindu</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Buddha</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Konghuchu</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kepercayaan Tuhan YME</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="agamaChart"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="agamaChartBar"></div>
+                        </div>
                     </div>
-                </section>
-
-                <section>
-                  <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="section-title">Grafik Agama (Pie)</h2>
-                        <div id="agamaChart"></div>
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="section-title">Grafik Agama (Bar)</h2>
-                        <div id="agamaChartBar"></div>
-                    </div>
-                   </div>
                 </section>
             </div>
 
             <div class="tab-pane fade" id="umur" role="tabpanel" aria-labelledby="umur-tab">
                 <section>
-                    <h2 class="section-title">Data Kelompok Umur</h2>
-                    <div class="table-responsive">
-                        <table id="kelompokUmurTable" class="table table-striped table-bordered" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Kelompok Umur</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>00-04</td>
-                                    <td>1066</td>
-                                </tr>
-                                <tr>
-                                    <td>05-09</td>
-                                    <td>1324</td>
-                                </tr>
-                                <tr>
-                                    <td>10-14</td>
-                                    <td>1435</td>
-                                </tr>
-                                <tr>
-                                    <td>15-19</td>
-                                    <td>1337</td>
-                                </tr>
-                                <tr>
-                                    <td>20-24</td>
-                                    <td>1317</td>
-                                </tr>
-                                <tr>
-                                    <td>25-29</td>
-                                    <td>1153</td>
-                                </tr>
-                                <tr>
-                                    <td>30-34</td>
-                                    <td>969</td>
-                                </tr>
-                                <tr>
-                                    <td>35-39</td>
-                                    <td>999</td>
-                                </tr>
-                                <tr>
-                                    <td>40-44</td>
-                                    <td>1314</td>
-                                </tr>
-                                <tr>
-                                    <td>45-49</td>
-                                    <td>1120</td>
-                                </tr>
-                                <tr>
-                                    <td>50-54</td>
-                                    <td>907</td>
-                                </tr>
-                                <tr>
-                                    <td>55-59</td>
-                                    <td>679</td>
-                                </tr>
-                                <tr>
-                                    <td>60-64</td>
-                                    <td>474</td>
-                                </tr>
-                                <tr>
-                                    <td>65-69</td>
-                                    <td>354</td>
-                                </tr>
-                                <tr>
-                                    <td>70-74</td>
-                                    <td>225</td>
-                                </tr>
-                                <tr>
-                                    <td>75+</td>
-                                    <td>210</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Kelompok Umur</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </section>
-                <section>
-                     <div class="row">
+                    <h2 class="section-title text-center">Penduduk Berdasarkan Kelompok Umur</h2>
+                    <div class="row">
                         <div class="col-md-6">
-                            <h2 class="section-title">Grafik Kelompok Umur (Area)</h2>
-                            <div id="kelompokUmurChart"></div>
+                            <div class="table-responsive">
+                                <table id="kelompokUmurTable" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Kelompok Umur</th>
+                                            <th>Jumlah Penduduk</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>00-04</td>
+                                            <td>1066</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05-09</td>
+                                            <td>1324</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10-14</td>
+                                            <td>1435</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15-19</td>
+                                            <td>1337</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20-24</td>
+                                            <td>1317</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-29</td>
+                                            <td>1153</td>
+                                        </tr>
+                                        <tr>
+                                            <td>30-34</td>
+                                            <td>969</td>
+                                        </tr>
+                                        <tr>
+                                            <td>35-39</td>
+                                            <td>999</td>
+                                        </tr>
+                                        <tr>
+                                            <td>40-44</td>
+                                            <td>1314</td>
+                                        </tr>
+                                        <tr>
+                                            <td>45-49</td>
+                                            <td>1120</td>
+                                        </tr>
+                                        <tr>
+                                            <td>50-54</td>
+                                            <td>907</td>
+                                        </tr>
+                                        <tr>
+                                            <td>55-59</td>
+                                            <td>679</td>
+                                        </tr>
+                                        <tr>
+                                            <td>60-64</td>
+                                            <td>474</td>
+                                        </tr>
+                                        <tr>
+                                            <td>65-69</td>
+                                            <td>354</td>
+                                        </tr>
+                                        <tr>
+                                            <td>70-74</td>
+                                            <td>225</td>
+                                        </tr>
+                                        <tr>
+                                            <td>75+</td>
+                                            <td>210</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="col-md-6">
-                            <h2 class="section-title">Grafik Kelompok Umur (Column)</h2>
+                            <div id="kelompokUmurChart"></div>
+                        </div>
+                        <div class="col-md-12">
                             <div id="kelompokUmurChartColumn"></div>
                         </div>
                     </div>
@@ -257,400 +309,352 @@
 
             <div class="tab-pane fade" id="pendidikan" role="tabpanel" aria-labelledby="pendidikan-tab">
                 <section>
-                    <h2 class="section-title">Data Status Pendidikan</h2>
-                    <div class="table-responsive">
-                        <table id="statusPendidikanTable" class="table table-striped table-bordered" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Status Pendidikan</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Tidak/Belum Sekolah</td>
-                                    <td>2663</td>
-                                </tr>
-                                <tr>
-                                    <td>Belum Tamat SD</td>
-                                    <td>1545</td>
-                                </tr>
-                                <tr>
-                                    <td>Tamat SD</td>
-                                    <td>2164</td>
-                                </tr>
-                                <tr>
-                                    <td>SLTP</td>
-                                    <td>2989</td>
-                                </tr>
-                                <tr>
-                                    <td>SLTA</td>
-                                    <td>4584</td>
-                                </tr>
-                                <tr>
-                                    <td>D1 dan D2</td>
-                                    <td>74</td>
-                                </tr>
-                                <tr>
-                                    <td>D3</td>
-                                    <td>222</td>
-                                </tr>
-                                <tr>
-                                    <td>S1</td>
-                                    <td>607</td>
-                                </tr>
-                                <tr>
-                                    <td>S2</td>
-                                    <td>35</td>
-                                </tr>
-                                <tr>
-                                    <td>S3</td>
-                                    <td>0</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Status Pendidikan</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </tfoot>
-                        </table>
+                    <h2 class="section-title text-center">Pendidikan Penduduk</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="table-responsive">
+                                <table id="statusPendidikanTable" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Status Pendidikan</th>
+                                            <th>Jumlah Penduduk</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tidak/Belum Sekolah</td>
+                                            <td>2663</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Belum Tamat SD</td>
+                                            <td>1545</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tamat SD</td>
+                                            <td>2164</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SLTP</td>
+                                            <td>2989</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SLTA</td>
+                                            <td>4584</td>
+                                        </tr>
+                                        <tr>
+                                            <td>D1 dan D2</td>
+                                            <td>74</td>
+                                        </tr>
+                                        <tr>
+                                            <td>D3</td>
+                                            <td>222</td>
+                                        </tr>
+                                        <tr>
+                                            <td>S1</td>
+                                            <td>607</td>
+                                        </tr>
+                                        <tr>
+                                            <td>S2</td>
+                                            <td>35</td>
+                                        </tr>
+                                        <tr>
+                                            <td>S3</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div id="statusPendidikanChartLine"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="statusPendidikanChart"></div>
+                        </div>
                     </div>
-                </section>
-
-                <section>
-                  <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="section-title">Grafik Status Pendidikan (Bar)</h2>
-                        <div id="statusPendidikanChart"></div>
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="section-title">Grafik Status Pendidikan (Line)</h2>
-                        <div id="statusPendidikanChartLine"></div>
-                    </div>
-                   </div>
                 </section>
             </div>
 
              <div class="tab-pane fade" id="pekerjaan" role="tabpanel" aria-labelledby="pekerjaan-tab">
                 <section>
-                    <h2 class="section-title">Data Status Pekerjaan</h2>
-                    <div class="table-responsive">
-                        <table id="statusPekerjaanTable" class="table table-striped table-bordered" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Status Pekerjaan</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Belum/Tidak Bekerja</td>
-                                    <td>3062</td>
-                                </tr>
-                                <tr>
-                                    <td>Nelayan</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>Pelajar dan Mahasiswa</td>
-                                    <td>3453</td>
-                                </tr>
-                                <tr>
-                                    <td>Pensiunan</td>
-                                    <td>90</td>
-                                </tr>
-                                <tr>
-                                    <td>Perdagangan</td>
-                                    <td>22</td>
-                                </tr>
-                                <tr>
-                                    <td>Mengurus Rumah Tangga</td>
-                                    <td>3265</td>
-                                </tr>
-                                <tr>
-                                    <td>Wiraswasta</td>
-                                    <td>720</td>
-                                </tr>
-                                <tr>
-                                    <td>Guru</td>
-                                    <td>169</td>
-                                </tr>
-                                 <tr>
-                                    <td>Perawat</td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
-                                    <td>Pengacara</td>
-                                    <td>2</td>
-                                </tr>
-                                <tr>
-                                    <td>Lainnya</td>
-                                    <td>4080</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Status Pekerjaan</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </section>
-                     <section>
-                      <div class="row">
-                         <div class="col-md-6">
-                            <h2 class="section-title">Grafik Status Pekerjaan (Radial Bar)</h2>
+                    <h2 class="section-title text-center">Pekerjaan Penduduk</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="table-responsive">
+                                <table id="statusPekerjaanTable" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Status Pekerjaan</th>
+                                            <th>Jumlah Penduduk</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Belum/Tidak Bekerja</td>
+                                            <td>3062</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nelayan</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pelajar dan Mahasiswa</td>
+                                            <td>3453</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pensiunan</td>
+                                            <td>90</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Perdagangan</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mengurus Rumah Tangga</td>
+                                            <td>3265</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Wiraswasta</td>
+                                            <td>720</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Guru</td>
+                                            <td>169</td>
+                                        </tr>
+                                         <tr>
+                                            <td>Perawat</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pengacara</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lainnya</td>
+                                            <td>4080</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-8">
                             <div id="statusPekerjaanChart"></div>
-                          </div>
-                         <div class="col-md-6">
-                            <h2 class="section-title">Grafik Status Pekerjaan (Column)</h2>
+                        </div>
+                        <div class="col-md-12">
                             <div id="statusPekerjaanChartColumn"></div>
-                         </div>
-                     </div>
+                        </div>
+                    </div>
                 </section>
             </div>
 
              <div class="tab-pane fade" id="golongan-darah" role="tabpanel" aria-labelledby="golongan-darah-tab">
                 <section>
-                    <h2 class="section-title">Data Golongan Darah</h2>
-                    <div class="table-responsive">
-                        <table id="golonganDarahTable" class="table table-striped table-bordered" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Golongan Darah</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                 <tr>
-                                    <td>A</td>
-                                    <td>283</td>
-                                </tr>
-                                <tr>
-                                    <td>B</td>
-                                    <td>230</td>
-                                </tr>
-                                <tr>
-                                    <td>AB</td>
-                                    <td>140</td>
-                                </tr>
-                                 <tr>
-                                    <td>O</td>
-                                    <td>487</td>
-                                </tr>
-                                <tr>
-                                    <td>A+</td>
-                                    <td>8</td>
-                                </tr>
-                                <tr>
-                                    <td>A-</td>
-                                    <td>0</td>
-                                </tr>
-                                 <tr>
-                                    <td>B+</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>B-</td>
-                                    <td>1</td>
-                                </tr>
-                                 <tr>
-                                    <td>AB+</td>
-                                    <td>6</td>
-                                </tr>
-                                <tr>
-                                    <td>AB-</td>
-                                    <td>6</td>
-                                </tr>
-                                <tr>
-                                    <td>O+</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <td>O-</td>
-                                    <td>21</td>
-                                </tr>
-                                 <tr>
-                                    <td>Tidak Diketahui</td>
-                                    <td>13684</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                   <th>Golongan Darah</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </section>
-                    <section>
-                        <div class="row">
-                         <div class="col-md-6">
-                            <h2 class="section-title">Grafik Golongan Darah (Donut)</h2>
+                    <h2 class="section-title text-center">Golongan Darah Penduduk</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="table-responsive">
+                                <table id="golonganDarahTable" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Golongan Darah</th>
+                                            <th>Jumlah Penduduk</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                         <tr>
+                                            <td>A</td>
+                                            <td>283</td>
+                                        </tr>
+                                        <tr>
+                                            <td>B</td>
+                                            <td>230</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AB</td>
+                                            <td>140</td>
+                                        </tr>
+                                         <tr>
+                                            <td>O</td>
+                                            <td>487</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A+</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>A-</td>
+                                            <td>0</td>
+                                        </tr>
+                                         <tr>
+                                            <td>B+</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>B-</td>
+                                            <td>1</td>
+                                        </tr>
+                                         <tr>
+                                            <td>AB+</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AB-</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>O+</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>O-</td>
+                                            <td>21</td>
+                                        </tr>
+                                         <tr>
+                                            <td>Tidak Diketahui</td>
+                                            <td>13684</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
                             <div id="golonganDarahChart"></div>
                          </div>
-                        <div class="col-md-6">
-                            <h2 class="section-title">Grafik Golongan Darah (Bar)</h2>
+                        <div class="col-md-12">
                             <div id="golonganDarahChartBar"></div>
-                         </div>
-                     </div>
-                    </section>
+                        </div>
+                    </div>
+                </section>
              </div>
 
             <div class="tab-pane fade" id="usia-sekolah" role="tabpanel" aria-labelledby="usia-sekolah-tab">
                 <section>
-                    <h2 class="section-title">Data Usia Sekolah</h2>
-                    <div class="table-responsive">
-                        <table id="usiaSekolahTable" class="table table-striped table-bordered" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Usia Sekolah</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                 <tr>
-                                    <td>03-04</td>
-                                    <td>505</td>
-                                </tr>
-                                <tr>
-                                    <td>05</td>
-                                    <td>251</td>
-                                </tr>
-                                <tr>
-                                    <td>06-11</td>
-                                    <td>1618</td>
-                                </tr>
-                                 <tr>
-                                    <td>12-14</td>
-                                    <td>890</td>
-                                </tr>
-                                <tr>
-                                    <td>15-17</td>
-                                    <td>815</td>
-                                </tr>
-                                <tr>
-                                    <td>18-22</td>
-                                    <td>1323</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Usia Sekolah</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </tfoot>
-                        </table>
+                    <h2 class="section-title text-center">Penduduk Usia Sekolah</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="table-responsive">
+                                <table id="usiaSekolahTable" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Usia Sekolah</th>
+                                            <th>Jumlah Penduduk</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>03-04</td>
+                                            <td>505</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05</td>
+                                            <td>251</td>
+                                        </tr>
+                                        <tr>
+                                            <td>06-11</td>
+                                            <td>1618</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12-14</td>
+                                            <td>890</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15-17</td>
+                                            <td>815</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18-22</td>
+                                            <td>1323</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div id="usiaSekolahChart"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="usiaSekolahChartArea"></div>
+                        </div>
                     </div>
-                </section>
-                <section>
-                   <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="section-title">Grafik Usia Sekolah (Line)</h2>
-                        <div id="usiaSekolahChart"></div>
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="section-title">Grafik Usia Sekolah (Area)</h2>
-                        <div id="usiaSekolahChartArea"></div>
-                    </div>
-                  </div>
                 </section>
               </div>
 
              <div class="tab-pane fade" id="jenis-kelamin" role="tabpanel" aria-labelledby="jenis-kelamin-tab">
                 <section>
-                    <h2 class="section-title">Data Jenis Kelamin</h2>
-                    <div class="table-responsive">
-                        <table id="jenisKelaminTable" class="table table-striped table-bordered" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Jenis Kelamin</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Laki-laki</td>
-                                    <td>7455</td>
-                                </tr>
-                                <tr>
-                                    <td>Perempuan</td>
-                                    <td>7428</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                   <th>Jenis Kelamin</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </tfoot>
-                        </table>
+                    <h2 class="section-title text-center">Jenis Kelamin Penduduk</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="table-responsive">
+                                <table id="jenisKelaminTable" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Jenis Kelamin</th>
+                                            <th>Jumlah Penduduk</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Laki-laki</td>
+                                            <td>7455</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Perempuan</td>
+                                            <td>7428</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div id="jenisKelaminChart"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="jenisKelaminChartColumn"></div>
+                        </div>
                     </div>
                 </section>
-                    <section>
-                     <div class="row">
-                      <div class="col-md-6">
-                        <h2 class="section-title">Grafik Jenis Kelamin (Pie)</h2>
-                        <div id="jenisKelaminChart"></div>
-                        </div>
-                        <div class="col-md-6">
-                          <h2 class="section-title">Grafik Jenis Kelamin (Column)</h2>
-                           <div id="jenisKelaminChartColumn"></div>
-                        </div>
-                     </div>
-                    </section>
               </div>
              <div class="tab-pane fade" id="status-kawin" role="tabpanel" aria-labelledby="status-kawin-tab">
                 <section>
-                    <h2 class="section-title">Data Status Kawin</h2>
-                    <div class="table-responsive">
-                        <table id="statusKawinTable" class="table table-striped table-bordered" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Status Kawin</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                 <tr>
-                                    <td>Belum Kawin</td>
-                                    <td>6906</td>
-                                </tr>
-                                <tr>
-                                    <td>Kawin</td>
-                                    <td>7157</td>
-                                </tr>
-                                 <tr>
-                                    <td>Cerai Hidup</td>
-                                    <td>247</td>
-                                </tr>
-                                <tr>
-                                    <td>Cerai Mati</td>
-                                    <td>573</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                   <th>Status Kawin</th>
-                                    <th>Jumlah Penduduk</th>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </section>
-                <section>
-                   <div class="row">
-                     <div class="col-md-6">
-                       <h2 class="section-title">Grafik Status Kawin (Bar)</h2>
-                       <div id="statusKawinChart"></div>
-                       </div>
-                       <div class="col-md-6">
-                         <h2 class="section-title">Grafik Status Kawin (Donut)</h2>
-                          <div id="statusKawinChartDonut"></div>
-                       </div>
+                    <h2 class="section-title text-center">Status Kawin Penduduk</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="table-responsive">
+                                <table id="statusKawinTable" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Status Kawin</th>
+                                            <th>Jumlah Penduduk</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                         <tr>
+                                            <td>Belum Kawin</td>
+                                            <td>6906</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kawin</td>
+                                            <td>7157</td>
+                                        </tr>
+                                         <tr>
+                                            <td>Cerai Hidup</td>
+                                            <td>247</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cerai Mati</td>
+                                            <td>573</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div id="statusKawinChartDonut"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="statusKawinChart"></div>
+                        </div>
                    </div>
                 </section>
               </div>
